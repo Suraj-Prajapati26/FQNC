@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(56, 63, 69);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: rgb(8, 8, 8);
+    color: red;
+    font-feature-settings: "isol";
+    justify-content: end;
+}
+nav ul li {
+    padding: 0px 12px;
+}
+
+.brand img{
+    width: 50px;
+    height: 45px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 73vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 19px auto;
+    border-radius: 12px;
+    padding: 35px;
+    background-image: url(music.jpg);
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+#myprogress{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.songitem {
+    
+    display:flex;
+    background-color: darkgrey;
+    
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songitem img {
+    width: 43px;
+    margin: 0 20px;
+    border-radius: 34px;
+}
+
+.time{
+    margin: 0 23px;
+}
+
+.time i{
+    cursor: pointer;
+}
+
+.songcontainer{
+    margin-top: 18px;
+}
+
+.songinfo {
+    position: absolute;
+    left: 10%;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    top: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.songinfo img {
+    margin-top: 2px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
